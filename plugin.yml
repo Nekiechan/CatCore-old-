@@ -1,0 +1,31 @@
+#name, main, version and api are required
+name: CatCraftCore
+main: ExamplePlugin\MainClass
+version: 2.0.0
+api: [2.0.0, 3.0.0, 3.0.1, 3.1.0, 3.0.0-ALPHA1]
+load: POSTWORLD
+author: Catgirl678
+description: CatCraftCore
+commands:
+ cathelp:
+  description: CatCraft Help
+  usage: "Usage: /cathelp"
+  permission: catcore.command.cathelp
+ score:
+  description: Shows CatCraft User Score
+  usage: "Usage: /score"
+  permission: catcore.command.score
+staff:
+  description: Staff Main command
+  usage: "Usage: /staff <help|list|add|remove>"
+  permission: catcore.command.staff
+permissions:
+ catcore.command.cathelp:
+  description: "Allows user to use CatCraft help"
+  default: true
+ catcore.command.score:
+  description: "Allows user to view CatCraft High Score"
+  default: true
+ catcore.command.staff:
+  description: "Allows user to use CatCraft Stafflist"
+  default: true
